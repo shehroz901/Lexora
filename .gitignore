@@ -1,0 +1,9 @@
+# build output
+bin/
+obj/
+.vs/
+*.user
+# the ~3 GB engine is downloaded by setup-engine.cmd, never committed
+app/
+# local tool state
+.claude/
