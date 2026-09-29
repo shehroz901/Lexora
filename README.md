@@ -45,3 +45,6 @@ Exit Lexora from the tray first. `Lexora.exe --selftest` opens test windows and 
 ## Settings (`settings.json`)
 `ExcludedApps` (process names to skip), `Language`, `DisabledRules` (LanguageTool rule IDs), `Port` (18081),
 `MaxEngineMemoryMb`, `AiEnabled`, `AiPort` (18083), `AiContextSize`, `SkipNonEnglish`.
+
+## Credits
+Developed by **Shozi901** · MIT License. Forks and modifications are welcome, but the copyright notice in `LICENSE` must be kept.

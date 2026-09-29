@@ -156,6 +156,10 @@ sealed class TrayApp : ApplicationContext
         var folder = new ToolStripMenuItem("Open settings folder");
         folder.Click += (_, _) => Process.Start(new ProcessStartInfo("explorer.exe", $"\"{Settings.Folder}\""));
 
+        var about = new ToolStripMenuItem("About Lexora");
+        about.Click += (_, _) => MessageBox.Show($"Lexora {Application.ProductVersion.Split('+')[0]}\nDeveloped by Shozi901\nMIT License · https://github.com/shehroz901/Lexora",
+            "About Lexora", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
         var exit = new ToolStripMenuItem("Exit");
         exit.Click += (_, _) => Shutdown();
 
@@ -166,7 +170,7 @@ sealed class TrayApp : ApplicationContext
             new ToolStripSeparator(),
             enabled, checkSelection, ai, rewrite, language,
             new ToolStripSeparator(),
-            dictionary, startup, folder,
+            dictionary, startup, folder, about,
             new ToolStripSeparator(),
             exit,
         ]);
