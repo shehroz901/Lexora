@@ -21,7 +21,7 @@ sealed class Settings
     public bool SkipNonEnglish { get; set; } = true;
 
     /// <summary>Process names (without .exe) where live checking is turned off.</summary>
-    public List<string> ExcludedApps { get; set; } = ["KeePass", "KeePassXC", "1Password", "Bitwarden", "WindowsTerminal", "cmd", "powershell"];
+    public List<string> ExcludedApps { get; set; } = ["KeePass", "KeePassXC", "1Password", "Bitwarden", "WindowsTerminal", "cmd", "powershell", "devenv"];
 
     public List<string> DisabledRules { get; set; } = ["WHITESPACE_RULE"];
 
